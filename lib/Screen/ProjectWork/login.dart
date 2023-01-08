@@ -59,7 +59,6 @@ class _loginState extends State<login> {
                               }
                   },
                 onChanged: (value){
-
                           },
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
@@ -93,7 +92,7 @@ class _loginState extends State<login> {
               TextButton(
 
                 style:TextButton.styleFrom(
-                    padding: EdgeInsets.only(right: 150,left: 150),
+                    padding: EdgeInsets.only(right: 120,left: 120),
                     backgroundColor: Colors.lightBlueAccent,
                 ),
 
@@ -101,10 +100,20 @@ class _loginState extends State<login> {
                   PrintInputData();
                   },
                   child:
-                  Text("Login",style: TextStyle(color:Colors.white, fontSize: 25),)
+                  Text("Login",style: TextStyle(color:Colors.white, fontSize: 15),)
                       ),
             Padding(padding: EdgeInsets.only(bottom: 20)),
             Text("Does not have account? ",style: TextStyle(fontSize: 15,color: Colors.black)),
+        // RichText(
+        //     text: TextSpan(
+        //       text: 'Does not have account?  ',
+        //       style: DefaultTextStyle.of(context).style,
+        //       children: const <TextSpan>[
+        //         TextSpan(text: 'Sign Up', style: TextStyle(fontWeight: FontWeight.bold)),
+        //         TextSpan(text: ' world!'),
+        //       ],
+        //     ),
+        //   ),
 
           ],
         )
